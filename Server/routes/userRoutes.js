@@ -11,6 +11,9 @@ const userRouter = express.Router();
 
 userRouter.post("/register", registerUser);
 userRouter.post("/login", loginUser);
+userRouter.post("/forgot-password", (req, res) => {
+  res.json({ message: "Reset link sent to your email!" });
+});
 userRouter.get("/data", protect, getUserById);
 userRouter.get("/resumes", protect, getUserResumes);
 

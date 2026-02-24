@@ -10,10 +10,10 @@ const PersonalInformation = ({ data, onChange, removeBg, setRemoveBg }) => {
     const fields = [
         { key: "full_name", label: "Full Name", icon: User, type: "text", required: true, maxLength: 20 },
         { key: "email", label: "Email Address", icon: Mail, type: "email", required: true, maxLength: 22 },
-        { key: "phone", label: "Phone_Number", icon: Phone, type: "tel", required: true, maxLength: 13 },
+        { key: "phone", label: "Phone Number", icon: Phone, type: "tel", required: true, maxLength: 13 },
         { key: "location", label: "Location", icon: MapPin, type: "text", maxLength: 18 },
         { key: "profession", label: "Profession", icon: BriefcaseBusiness, type: "text", maxLength: 15 },
-        { key: "linkedIn", label: "LinkedIn Profile", icon: Linkedin, type: "url", maxLength: 20 },
+        { key: "linkedin", label: "LinkedIn Profile", icon: Linkedin, type: "url", maxLength: 20 },
         { key: "website", label: "Personal Website", icon: GlobeIcon, type: "url", maxLength: 20 },
     ]
 

@@ -50,7 +50,7 @@ const ResumeBuilder = () => {
   const [removeBg, setRemoveBg] = useState(false)
 
   const sections = [
-    { id: "persolnal_info", name: "Persolnal Info", icon: User },
+    { id: "personal_info", name: "Personal Info", icon: User },
     { id: "summary", name: "Summary", icon: FileText },
     { id: "experience", name: "Experience", icon: Briefcase },
     { id: "education", name: "Education", icon: GraduationCap },
@@ -99,7 +99,7 @@ const ResumeBuilder = () => {
       setResumeData(data.resume)
       toast.success(data.message)
     } catch (error) {
-      console.log("Erroe while saving : ", error.message)
+      console.log("Error while saving : ", error.message)
     }
   }
 
@@ -286,7 +286,7 @@ const ResumeBuilder = () => {
 
               {/* form content */}
               <div className=' space-y-6'>
-                {activeSection.id === 'persolnal_info' && (
+                {activeSection.id === 'personal_info' && (
 
                   <PersonalInformation
                     data={resumeData.personal_info}

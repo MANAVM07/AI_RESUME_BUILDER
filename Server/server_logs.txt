@@ -1,0 +1,19 @@
+2026-02-24T13:29:41.935Z - GET /
+2026-02-24T13:29:44.079Z - GET /api/nonexistent
+2026-02-24T13:29:44.087Z - [404 NOT FOUND] GET /api/nonexistent
+2026-02-24T13:29:52.897Z - GET /
+2026-02-24T13:29:53.049Z - POST /api/users/login
+2026-02-24T13:29:53.190Z - GET /api/nonexistent
+2026-02-24T13:29:53.196Z - [404 NOT FOUND] GET /api/nonexistent
+2026-02-24T13:31:15.348Z - [500 ERROR] POST /api/users/register
+SyntaxError: Expected property name or '}' in JSON at position 1 (line 1 column 2)
+    at JSON.parse (<anonymous>)
+    at parse (F:\AI_RESUME_BUILDER\server\node_modules\body-parser\lib\types\json.js:77:19)
+    at F:\AI_RESUME_BUILDER\server\node_modules\body-parser\lib\read.js:123:18
+    at AsyncResource.runInAsyncScope (node:async_hooks:214:14)
+    at invokeCallback (F:\AI_RESUME_BUILDER\server\node_modules\raw-body\index.js:238:16)
+    at done (F:\AI_RESUME_BUILDER\server\node_modules\raw-body\index.js:227:7)
+    at IncomingMessage.onEnd (F:\AI_RESUME_BUILDER\server\node_modules\raw-body\index.js:287:7)
+    at IncomingMessage.emit (node:events:518:28)
+    at endReadableNT (node:internal/streams/readable:1698:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:90:21)
